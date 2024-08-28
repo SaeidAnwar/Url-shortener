@@ -4,9 +4,9 @@ const { uuid } = require("uuidv4");
 async function HandleShowSignupForm(req, res) {
   const sessionId = req.cookies?.sid;
   const sid = await SID.findOne({ sessionId: sessionId });
-  if (sid) {
-    return res.redirect(`/?username=${sid.username}`);
-  }
+  // if (sid) {
+  //   return res.redirect(`/?username=${sid.username}`);
+  // }
   return res.render("signup");
 }
 
