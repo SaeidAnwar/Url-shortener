@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+  </head>
+  <body>
+    <!-- <% if(locals.username){ %>
+    <h1>Welcome <%= username %></h1>
+    <%} %> -->
+    <h2>Url Shortener</h2>
+    <form method="POST" action="/" autocomplete="off">
+      <div class="input-wrapper">
+        <img src="illustration-share-icon.png"/>
+        <input name="url" type="text" placeholder="Enter the link here!"/>
+        <button> Shorten Now! </button>
+      </div>
+      <input type = "hidden" name="username" value=<%= username %> />
+    </form>
+    <!-- <% if (locals.shortId) { %>
+    <h3>Generated Url: http://localhost:8001/<%=shortId%></h3>
+    <% } %> -->
+
+    <div class="analytics-container">
+    <table>
+      <tr>
+        <th>S.no</th>
+        <th>Short Url</th>
+        <th>Original Url</th>
+        <th>No of Visits</th>
+      </tr>
+      <% urlList.forEach((element, index) => { %>
+       <tr>
+        <td><%= index+1 %></th>
+        <td>http://localhost:8001/<%= element.shortId %></th>
+        <td><%= element.redirectURL %></th>
+        <td><%= element.visitHistory.length %></th>
+       </tr>
+      <% }) %>
+    </table>
+    </div>
+  </body>
+</html>

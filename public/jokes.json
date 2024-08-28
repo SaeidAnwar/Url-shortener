@@ -1,0 +1,248 @@
+[
+    {
+        "id": 1,
+        "joke": "Why don't scientists trust atoms? Because they make up everything!"
+    },
+    {
+        "id": 2,
+        "joke": "Why did the scarecrow win an award? Because he was outstanding in his field!"
+    },
+    {
+        "id": 3,
+        "joke": "Why don't skeletons fight each other? They don't have the guts."
+    },
+    { "id": 4, "joke": "What do you call fake spaghetti? An impasta!" },
+    {
+        "id": 5,
+        "joke": "Why did the bicycle fall over? Because it was two-tired!"
+    },
+    {
+        "id": 6,
+        "joke": "What do you get if you cross a snowman and a vampire? Frostbite."
+    },
+    { "id": 7, "joke": "Why was the math book sad? It had too many problems." },
+    {
+        "id": 8,
+        "joke": "Why did the tomato turn red? Because it saw the salad dressing!"
+    },
+    {
+        "id": 9,
+        "joke": "What do you call cheese that isn't yours? Nacho cheese!"
+    },
+    { "id": 10, "joke": "Why don't eggs tell jokes? They might crack up." },
+    {
+        "id": 11,
+        "joke": "What did one ocean say to the other ocean? Nothing, they just waved."
+    },
+    {
+        "id": 12,
+        "joke": "Why did the golfer bring two pairs of pants? In case he got a hole in one."
+    },
+    {
+        "id": 13,
+        "joke": "Why can't you give Elsa a balloon? Because she will let it go!"
+    },
+    { "id": 14, "joke": "How do you organize a space party? You planet." },
+    {
+        "id": 15,
+        "joke": "Why don't some couples go to the gym? Because some relationships don't work out."
+    },
+    {
+        "id": 16,
+        "joke": "Why did the coffee file a police report? It got mugged."
+    },
+    {
+        "id": 17,
+        "joke": "What do you call a bear with no teeth? A gummy bear."
+    },
+    {
+        "id": 18,
+        "joke": "Why did the cookie go to the hospital? Because it felt crummy."
+    },
+    {
+        "id": 19,
+        "joke": "How does a penguin build its house? Igloos it together."
+    },
+    {
+        "id": 20,
+        "joke": "Why did the math teacher take off points? Because the students were too cool for school."
+    },
+    {
+        "id": 21,
+        "joke": "What do you call a fish wearing a crown? A kingfish!"
+    },
+    {
+        "id": 22,
+        "joke": "Why don't you see giraffes in elementary school? Because they're all in high school!"
+    },
+    { "id": 23, "joke": "What do you call a sleeping bull? A bulldozer!" },
+    { "id": 24, "joke": "Why was the broom late? It swept in." },
+    {
+        "id": 25,
+        "joke": "Why was the computer cold? It left its Windows open."
+    },
+    {
+        "id": 26,
+        "joke": "How do you catch a squirrel? Climb a tree and act like a nut!"
+    },
+    {
+        "id": 27,
+        "joke": "Why did the stadium get hot after the game? All of the fans left."
+    },
+    {
+        "id": 28,
+        "joke": "Why did the banana go to the doctor? It wasn't peeling well."
+    },
+    {
+        "id": 29,
+        "joke": "Why don't crabs give to charity? Because they are shellfish."
+    },
+    {
+        "id": 30,
+        "joke": "What do you call an alligator in a vest? An investigator."
+    },
+    {
+        "id": 31,
+        "joke": "Why did the chicken join a band? Because it had the drumsticks."
+    },
+    {
+        "id": 32,
+        "joke": "Why did the duck get a second job? He had too many bills."
+    },
+    {
+        "id": 33,
+        "joke": "What do you call a can opener that doesn’t work? A can't opener."
+    },
+    {
+        "id": 34,
+        "joke": "Why are frogs so happy? They eat whatever bugs them."
+    },
+    { "id": 35, "joke": "What do you call a deer with no eyes? No eye-deer!" },
+    {
+        "id": 36,
+        "joke": "Why was the big cat disqualified from the race? Because it was a cheetah."
+    },
+    {
+        "id": 37,
+        "joke": "Why don't you ever see elephants hiding in trees? Because they're so good at it."
+    },
+    { "id": 38, "joke": "What do you call a lazy kangaroo? A pouch potato." },
+    {
+        "id": 39,
+        "joke": "Why did the man put his money in the blender? He wanted to make some liquid assets."
+    },
+    {
+        "id": 40,
+        "joke": "Why are ghosts bad at lying? Because you can see right through them."
+    },
+    {
+        "id": 41,
+        "joke": "Why did the dog sit in the shade? Because he didn’t want to be a hot dog."
+    },
+    {
+        "id": 42,
+        "joke": "Why did the pony get sent to his room? He wouldn't stop horsing around."
+    },
+    {
+        "id": 43,
+        "joke": "Why did the student eat his homework? Because the teacher said it was a piece of cake."
+    },
+    {
+        "id": 44,
+        "joke": "What do you call a belt with a watch on it? A waist of time."
+    },
+    {
+        "id": 45,
+        "joke": "Why did the frog take the bus to work? His car got toad away."
+    },
+    {
+        "id": 46,
+        "joke": "What do you get when you cross a sheep and a kangaroo? A woolly jumper."
+    },
+    {
+        "id": 47,
+        "joke": "Why do cows wear bells? Because their horns don’t work."
+    },
+    {
+        "id": 48,
+        "joke": "Why don’t oysters donate to charity? Because they are shellfish."
+    },
+    {
+        "id": 49,
+        "joke": "Why was the baby strawberry crying? Because his parents were in a jam."
+    },
+    {
+        "id": 50,
+        "joke": "Why did the golfer bring an extra pair of socks? In case he got a hole in one!"
+    },
+    {
+        "id": 51,
+        "joke": "Why don't some fish play piano? Because you can't tuna fish!"
+    },
+    {
+        "id": 52,
+        "joke": "What do you call a snowman with a six-pack? An abdominal snowman."
+    },
+    { "id": 53, "joke": "Why was the picture sent to jail? It was framed." },
+    {
+        "id": 54,
+        "joke": "Why don't melons get married? Because they cantaloupe!"
+    },
+    { "id": 55, "joke": "What do you call a singing laptop? A Dell." },
+    {
+        "id": 56,
+        "joke": "Why was the calendar afraid? Its days were numbered."
+    },
+    {
+        "id": 57,
+        "joke": "What did one hat say to the other? You stay here, I'll go on ahead."
+    },
+    {
+        "id": 58,
+        "joke": "Why did the barber win the race? Because he took a short cut."
+    },
+    {
+        "id": 59,
+        "joke": "Why did the firefly get good grades? Because it was bright."
+    },
+    {
+        "id": 60,
+        "joke": "Why are fish so smart? Because they live in schools."
+    },
+    {
+        "id": 61,
+        "joke": "Why did the stadium get hot after the game? All of the fans left."
+    },
+    {
+        "id": 62,
+        "joke": "Why did the ghost go to the party? Because he had nobody to dance with."
+    },
+    {
+        "id": 63,
+        "joke": "Why did the music teacher go to jail? Because she got caught with a bunch of notes."
+    },
+    {
+        "id": 64,
+        "joke": "What do you call an alligator wearing a vest? An investigator."
+    },
+    {
+        "id": 65,
+        "joke": "Why don’t you ever see elephants hiding in trees? Because they’re so good at it."
+    },
+    {
+        "id": 66,
+        "joke": "Why did the cow go to outer space? To see the moooon!"
+    },
+    {
+        "id": 67,
+        "joke": "Why do seagulls fly over the ocean? Because if they flew over the bay, they’d be bagels!"
+    },
+    {
+        "id": 68,
+        "joke": "Why did the grape stop in the middle of the road? Because he ran out of juice!"
+    },
+    {
+        "id": 69,
+        "joke": "Why don’t you give Elsa a balloon? Because she’ll let it go!"
+    }
+]
