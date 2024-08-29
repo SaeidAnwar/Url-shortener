@@ -72,3 +72,8 @@ a {
     font-style: italic;
     font-size: 1.2rem;
 }
+
+.error-msg {
+    color: rgb(255, 0, 0);
+    font-size:  1.25rem;
+}

@@ -4,6 +4,10 @@ const { SID } = require("../models/user");
 
 async function HandleShowHomePage(req, res) {
     const sessionId = req.cookies?.sid;
+    if(!sessionId) {
+        res.redirect("/login");
+    }    
+
     const user = await SID.findOne({ sessionId: sessionId });
     const urlList = await URL.find({ username: user.username });
     return res.render("home", { username: user.username, urlList: urlList });

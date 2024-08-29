@@ -2,8 +2,8 @@ const { USER, SID } = require("../models/user");
 const { uuid } = require("uuidv4");
 
 async function HandleShowSignupForm(req, res) {
-  const sessionId = req.cookies?.sid;
-  const sid = await SID.findOne({ sessionId: sessionId });
+  // const sessionId = req.cookies?.sid;
+  // const sid = await SID.findOne({ sessionId: sessionId });
   // if (sid) {
   //   return res.redirect(`/?username=${sid.username}`);
   // }
@@ -11,11 +11,11 @@ async function HandleShowSignupForm(req, res) {
 }
 
 async function HandleShowLoginForm(req, res) {
-  const sessionId = req.cookies?.sid;
-  const sid = await SID.findOne({ sessionId: sessionId });
-  if (sid) {
-    return res.redirect(`/?username=${sid.username}`);
-  }
+  // const sessionId = req.cookies?.sid;
+  // const sid = await SID.findOne({ sessionId: sessionId });
+  // if (sid) {
+  //   return res.redirect(`/?username=${sid.username}`);
+  // }
   return res.render("login");
 }
 
@@ -23,10 +23,30 @@ async function HandleShowLoginForm(req, res) {
 async function HandleNewUserSignup(req, res) {
   const body = req.body;
   if (!body.username || !body.email || !body.password) {
-    return res.status(400).json({ msg: "please fill all details" });
+    return res.render("signup", { msg: "please fill all details" });
   }
 
   //find if user exist
+  const user = await USER.findOne({username: body.username});
+  const email = await USER.findOne({email: body.email});
+
+  if(user && email) {
+    return res.render("signup", {
+      msg: "username and email exists",
+    })
+  }
+
+  if(user){
+    return res.render("signup", {
+      msg: "username exists",
+    })
+  }
+
+  if(email){
+    return res.render("signup", {
+      msg: "email exists",
+    })
+  }
 
   await USER.create({
     username: body.username,
@@ -40,7 +60,7 @@ async function HandleNewUserSignup(req, res) {
 async function HandleLogin(req, res) {
   const body = req.body;
   if (!body.username || !body.password) {
-    return res.status(400).json({ msg: "please fill all details" });
+    return res.render("login", { msg: "please fill all details" });
   }
 
   const user = await USER.findOne({
@@ -49,11 +69,9 @@ async function HandleLogin(req, res) {
   });
 
   if (!user) {
-    return res
-      .status(400)
-      .json({
-        msg: "no matching user found either signup or fill correct details",
-      });
+    return res.render("login", {
+      msg: "incorrect username or password",
+    })
   }
 
   const sessionId = uuid();

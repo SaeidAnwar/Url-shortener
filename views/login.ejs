@@ -14,13 +14,20 @@
                 <input name="username" type="text" placeholder="username" />
             </div>
             <div>
-                <input name="password" type="text" placeholder="password" />
+                <input name="password" type="password" placeholder="password" />
             </div>
             <div class="button-container">
                 <p>new user? </p>
                 <a href="/signup">Signup</a>
                 <button type="submit">Login</button>
+            </div>
             <div>
+                <p class="error-msg">
+                    <% if (locals.msg) { %>
+                        <%= msg %> 
+                    <% } %>
+                </p>
+            </div>
         </form>
     </div>
 </body>

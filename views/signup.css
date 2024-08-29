@@ -58,11 +58,12 @@ button {
     width: 100%;
 }
 
-p {
+.button-container p {
     margin-right: 5px;
     padding-bottom: 30px;
     margin-left: 10px;
     font-size: 1.2rem;
+    color: white;
 }
 
 a {
@@ -71,4 +72,9 @@ a {
     margin-right: auto;
     font-style: italic;
     font-size: 1.2rem;
+}
+
+.error-msg {
+    color: rgb(255, 0, 0);
+    font-size:  1.25rem;
 }

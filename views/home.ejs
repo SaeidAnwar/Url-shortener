@@ -7,9 +7,21 @@
     <link rel="stylesheet" type="text/css" href="home.css">
   </head>
   <body>
-    <!-- <% if(locals.username){ %>
-    <h1>Welcome <%= username %></h1>
-    <%} %> -->
+    <div class="signout-container">
+      <form style="visibility: hidden;">
+      </form>
+      <h3>
+        Welcome
+        <% if(locals.username){ %>
+          <%= username %>
+        <%} %>
+        &#128512;
+      </h3>
+      <form method="GET" action="/login">
+        <img src="icons8-male-user-100.png"/>
+        <button type="submit">Logout</button>
+      </form>
+    </div>
     <h2>Url Shortener</h2>
     <form method="POST" action="/" autocomplete="off">
       <div class="input-wrapper">

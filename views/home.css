@@ -7,7 +7,7 @@ h2 {
     max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    font-size: 4rem;
+    font-size: 2.5rem;
 }
 
 .input-wrapper {
@@ -70,7 +70,6 @@ h2 {
 
 .analytics-container table {
     table-layout: initial;
-    overflow: hidden;
     border-collapse: separate;
     border-width: 3px;
     border-style: solid;
@@ -86,6 +85,9 @@ h2 {
     height: 30px;
     background-color: rgb(27, 27, 27);
     color: rgb(204, 204, 204);
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 450px;
 }
 
 .analytics-container th {
@@ -95,4 +97,47 @@ h2 {
     height: 6vh;
     color: rgb(219, 219, 219);
     font-size: 1.2rem;
+}
+
+.signout-container {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.signout-container h3 {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.signout-container img {
+    height: 40px;
+}
+
+.signout-container form {
+    display: flex;
+    border-radius: 100px;
+    padding: 0;
+    width: 150px;
+    font-size: 1.2rem;
+    height: 40px;
+    border-style: solid;
+    border-color:  rgb(111, 157, 182);;
+    border-width: 5px;
+    background-color:  rgb(47, 126, 246);
+    align-items: center;
+}
+
+.signout-container button {
+    width: 100%;
+    border-style: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 600;
+    margin-right: 10%;
 }
