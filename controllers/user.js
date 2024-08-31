@@ -11,11 +11,11 @@ async function HandleShowSignupForm(req, res) {
 }
 
 async function HandleShowLoginForm(req, res) {
-  // const sessionId = req.cookies?.sid;
-  // const sid = await SID.findOne({ sessionId: sessionId });
-  // if (sid) {
-  //   return res.redirect(`/?username=${sid.username}`);
-  // }
+  const sessionId = req.cookies?.sid;
+  const sid = await SID.findOne({ sessionId: sessionId });
+  if (sid) {
+    return res.redirect(`/?username=${sid.username}`);
+  }
   return res.render("login");
 }
 
@@ -84,11 +84,20 @@ async function HandleLogin(req, res) {
   return res.redirect(`/?username=${body.username}`);
 }
 
+async function HandleLogout(req, res) {
+  const sessionId = req.cookies?.sid;
+  await SID.findOneAndDelete({sessionId:sessionId});
+  res.clearCookie("sid");
+
+  return res.redirect("/login");
+}
+
 module.exports = {
   HandleNewUserSignup,
   HandleShowSignupForm,
   HandleLogin,
   HandleShowLoginForm,
+  HandleLogout,
 };
 
 
